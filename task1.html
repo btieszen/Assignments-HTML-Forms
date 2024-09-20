@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignments HTML forms</title>
+    </head>
+
+<body>
+    <h1>Assignments HTML forms</h1>
+    <h2>Task 1:</h2>
+    
+    <fieldset>
+    <form>
+    <label for ="user-email">Email:</label>
+    <input type="email" id="user-email" name="user-email" placeholder="Enter Your Email"required>
+    <button type="submit">Submit</button>
+    </form>
+    </fieldset>
+
+    <h2>Task 2:</h2>
+    <fieldset>
+        <form>
+            <label for = "quantity">Enter a Quantity:</label>
+            <input type="number" id ="quantity" name="quantity" min="5" max="100" step ="1"required>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+
+    <h2>Task 3:</h2>
+    <fieldset>
+        <form>
+            <label for ="date">Enter a date:</label>
+            <input type="date" id="date" name="date"required>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+
+    <h2>Task 4:</h2>
+    <fieldset>
+        <form>
+            <label for="range">Enter a Range</label>
+            <input type="range" name="range" id="range" value="5" min="1" max="100" oninput="range_disp.value = range.value">
+   <output  id="range_disp"></output>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+
+    <h1>Building a Comprehensive Web Form</h1>
+      <form action ="/submit"method="post
+
+    <h2>Task 1:</h2>
+     <fieldset>
+       <label for ="favorite-programming-language">Favorite programming language</label> 
+            <select id="favorite-programming-language"name="favorite-programming-language">
+            <option value ="python">Python</option>
+            <option value ="java">Java</option>
+            <option value ="c++">C++</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+        <label for="leval of expertise">Leval of expertise</label>
+        <input type="radio" id="beginner" name="Level of Expertise" value="beginner"required>
+        <label for ="beginner">Beginner</label>
+
+        <input type="radio" id="intermediate" name="Level of Expertise" value="intermediate"required>
+        <label for ="intermediate">Intermediate</label>
+
+        
+        <input type="radio" id="advanced" name="Level of Expertise" value="advanced"required>
+        <label for ="advanced">Advanced</label>
+        </fieldset>
+
+        <fieldset>
+        <label for="preferred development platforms">Preferred development platforms</label>
+        <input type="checkbox" id="web" name="Preferred development platforms" value="web">
+        <label for="web">Web</label>
+
+        <input type="checkbox" id="mobil" name="Preferred development platforms" value="mobil">
+        <label for="mobil">Mobil</label>
+
+        <input type="checkbox" id="desktop" name="Preferred development platforms" value="desktop">
+        <label for="desktop">Desktop</label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+</form>
+
+<div role="alert"aria-live="assertive" id ="error message">
+    Please fill out all required fields.
+</div>
+</body>
+</html>
